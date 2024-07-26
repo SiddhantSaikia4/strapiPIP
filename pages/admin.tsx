@@ -1,4 +1,4 @@
-import withAuth from '../components/withAuth';
+// import withAuth from '../components/withAuth';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
@@ -25,4 +25,4 @@ const AdminPage = () => {
   );
 };
 
-export default withAuth(AdminPage, 'Super Admin');
+// export default withAuth(AdminPage, 'Super Admin');
