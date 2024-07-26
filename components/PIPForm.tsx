@@ -197,8 +197,10 @@ export const PIPForm = ({ initialData, onSubmit }) => {
       ragEntry.color,
     ]);
 
+    const previousAutoTable = doc.previousAutoTable;
+
     doc.autoTable({
-      startY: doc.autoTable.previous.finalY + 10,
+      startY: previousAutoTable ? previousAutoTable.finalY + 10 : 50,
       head: [["#", "Date", "Actions Taken", "Goals Met", "Observations", "RAG"]],
       body: ragData,
     });
@@ -387,8 +389,8 @@ export const PIPForm = ({ initialData, onSubmit }) => {
                       <tr>
                         <td style={{ border: '1px solid black', padding: '0.5rem', backgroundColor: '#C6E7F5' }}>PIP Start Date</td>
                         <td style={{ border: '1px solid black', padding: '0.5rem' }}>{new Date(submittedData.date).toLocaleString()}</td>
-                        <td rowSpan="2" style={{ border: '1px solid black', padding: '0.5rem', backgroundColor: '#C6E7F5', verticalAlign: 'top' }}>Evaluation Process</td>
-                        <td rowSpan="2" style={{ border: '1px solid black', padding: '0.5rem', verticalAlign: 'top' }}>{submittedData.contact.evaluationProcess}</td>
+                        <td rowSpan={2} style={{ border: '1px solid black', padding: '0.5rem', backgroundColor: '#C6E7F5', verticalAlign: 'top' }}>Evaluation Process</td>
+                        <td rowSpan={2} style={{ border: '1px solid black', padding: '0.5rem', verticalAlign: 'top' }}>{submittedData.contact.evaluationProcess}</td>
                       </tr>
                       <tr>
                         <td style={{ border: '1px solid black', padding: '0.5rem', backgroundColor: '#C6E7F5' }}>Employee Name</td>
@@ -397,8 +399,8 @@ export const PIPForm = ({ initialData, onSubmit }) => {
                       <tr>
                         <td style={{ border: '1px solid black', padding: '0.5rem', backgroundColor: '#C6E7F5' }}>Designation</td>
                         <td style={{ border: '1px solid black', padding: '0.5rem' }}>{submittedData.position}</td>
-                        <td rowSpan="2" style={{ border: '1px solid black', padding: '0.5rem', backgroundColor: '#C6E7F5', verticalAlign: 'top' }}>Improvement Plan</td>
-                        <td rowSpan="2" style={{ border: '1px solid black', padding: '0.5rem', verticalAlign: 'top' }}>{submittedData.contact.improvementPlan}</td>
+                        <td rowSpan={2} style={{ border: '1px solid black', padding: '0.5rem', backgroundColor: '#C6E7F5', verticalAlign: 'top' }}>Improvement Plan</td>
+                        <td rowSpan={2} style={{ border: '1px solid black', padding: '0.5rem', verticalAlign: 'top' }}>{submittedData.contact.improvementPlan}</td>
                       </tr>
                       <tr>
                         <td style={{ border: '1px solid black', padding: '0.5rem', backgroundColor: '#C6E7F5' }}>Department</td>

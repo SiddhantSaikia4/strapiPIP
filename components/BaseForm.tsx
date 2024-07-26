@@ -17,7 +17,7 @@ const planOptions: SelectInputOption[] = [
   },
   {
     title: "Asociate Software Engineer",
-    value: EmployeePosition.Asociate,
+    value: EmployeePosition.Senior,
   },
 ];
 

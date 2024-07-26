@@ -24,7 +24,7 @@ const GradeScaler = () => {
          Java  (0 to 5):
         </Typography>
         <Controller
-          name="grade.Java"
+          name="grade.java"
           control={control}
           render={({ field }) => (
             <RadioGroup {...field} row>
@@ -45,7 +45,7 @@ const GradeScaler = () => {
          Javascript  (0 to 5):
         </Typography>
         <Controller
-          name="grade.Javascript"
+          name="grade.javascript"
           control={control}
           render={({ field }) => (
             <RadioGroup {...field} row>

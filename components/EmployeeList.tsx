@@ -113,8 +113,10 @@ const List = ({ initialContacts }) => {
       ragEntry.color,
     ]);
 
+    const previousAutoTable = doc.previousAutoTable;
+
     doc.autoTable({
-      startY: doc.autoTable.previous.finalY + 10,
+      startY: previousAutoTable ? previousAutoTable.finalY + 10 : 50,
       head: [["#", "Date", "Actions Taken", "Goals Met", "Observations", "RAG"]],
       body: ragData,
     });
