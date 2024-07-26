@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { useController, useFormContext } from "react-hook-form";
-import { SelectInput } from "./SelectInput";
 
 const Container = styled.span`
   display: inline-flex;
@@ -33,11 +32,11 @@ const Container = styled.span`
 const ColorPicker = ({ onChange, value }) => {
   return (
     <Container>
-      <SelectInput onChange={onChange} value={value}>
+      <select onChange={onChange} value={value}>
         <option value="#008000">Green</option>
         <option value="#FFBF00">Amber</option>
         <option value="#FF0000">Red</option>
-      </SelectInput>
+      </select>
       {/* <input type="text" readOnly value={value} /> */}
     </Container>
   );
