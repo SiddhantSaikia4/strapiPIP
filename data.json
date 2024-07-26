@@ -1,0 +1,29 @@
+[
+    {
+      "name": "Navin Prasad Durgaprasad",
+      "designation": "Vice President",
+      "department": "SALES - USA",
+      "children": [
+        {
+          "name": "Roy Barman",
+          "designation": "VP Engineering",
+          "department": "COE Dropthought",
+          "children": [
+            {
+              "name": "Thilakan S",
+              "designation": "Cloud Solutions Lead Architect",
+              "department": "Digital Apps",
+              "children": []
+            },
+            {
+              "name": "Balasubramanian S",
+              "designation": "Consultant",
+              "department": "COE - APPLICATION DEV & MAINTENANCE",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  
