@@ -19,6 +19,7 @@
     "@mui/material": "^5.4.0",
     "@sendgrid/mail": "^8.1.3",
     "@strapi/provider-email-sendgrid": "^4.25.5",
+    "@types/styled-components": "^5.1.34",
     "axios": "^1.7.2",
     "dayjs": "^1.10.7",
     "faker": "^5.1.0",
@@ -31,14 +32,14 @@
     "react-dom": "17.0.2",
     "react-hook-form": "^7.25.3",
     "strapi-plugin-invite-email": "^1.0.1",
-    "styled-components": "^6.1.11",
+    "styled-components": "^6.1.12",
     "swr": "^2.2.5",
     "yup": "^0.32.11",
     "yup-phone": "^1.3.2"
   },
   "devDependencies": {
-    "@types/node": "^17.0.14",
-    "@types/react": "^17.0.38",
+    "@types/node": "^17.0.45",
+    "@types/react": "^17.0.80",
     "@types/yup": "^0.29.13",
     "autoprefixer": "^10.4.2",
     "eslint": "8.8.0",
@@ -46,6 +47,6 @@
     "postcss": "^8.4.6",
     "prettier": "2.5.1",
     "tailwindcss": "^3.0.18",
-    "typescript": "^4.5.5"
+    "typescript": "^4.9.5"
   }
 }
