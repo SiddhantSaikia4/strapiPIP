@@ -2,7 +2,7 @@ module.exports = ({ env }) => ({
     email: {
       provider: 'sendgrid',
       providerOptions: {
-        apiKey: env('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'),
+        apiKey: env(''),
       },
       settings: {
         defaultFrom: 'siddhant.kumar@bahwancybertek.com',
