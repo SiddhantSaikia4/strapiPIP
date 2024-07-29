@@ -8,7 +8,7 @@ import Layout from "../components/Layout";
 const Title = () => (
   <Grid container spacing={1} justifyContent="center" alignItems="center">
     <Grid item xs={12}>
-      <Chart initialProfiles={[]}  />
+      <Chart initialProfiles={[]} />
     </Grid>
     <Grid item xs={12}>
       <List initialContacts={undefined} />
@@ -29,9 +29,18 @@ export default function Home() {
           flexDirection: 'column', 
           alignItems: 'center', 
           justifyContent: 'center', 
-          background: 'radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)'
+          background: 'radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)',
+          overflow: 'auto',
+          WebkitOverflowScrolling: 'touch',
+          msOverflowStyle: 'none',
+          scrollbarWidth: 'none'
         }}
       >
+        <style jsx global>{`
+          ::-webkit-scrollbar {
+            display: none;
+          }
+        `}</style>
         <Title />
       </Container>
     </Layout>
